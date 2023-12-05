@@ -1,10 +1,9 @@
 import string
 
-'''
-Creator: Burhan Özbek
-Date: 17.11.2020
-Version: 1.0
-'''
+
+__creator__ =  "Burhan Özbek"
+__date__ = "05.12.2023"
+__version__ =  "1.2"
 
 # Run the doctests
 if __name__ == "__main__":
@@ -16,10 +15,10 @@ def is_palindrom(s:str):
         Checks if a given word is a palindrome.
 
         Parameters:
-        - word (str): The word to be checked for palindrome.
+        :param s: (str): The word to be checked for palindrome.
 
         Returns:
-        - bool: True if the word is a palindrome, False otherwise.
+        - bool True if the word is a palindrome, False otherwise.
 
         Examples:
         >>> is_palindrom("9009")
@@ -32,7 +31,7 @@ def is_palindrom_sentence(s:str):
         Checks if a given sentence is a palindrome, considering only alphanumeric characters.
 
         Parameters:
-        - sentence (str): The sentence to be checked for palindrome.
+        - :param s (str): The sentence to be checked for palindrome.
 
         Returns:
         - bool: True if the sentence is a palindrome, False otherwise.
@@ -50,10 +49,10 @@ def palindrom_product(x:int):
         Finds the largest palindrome made from the product of two 3-digit numbers.
 
         Parameters:
-        - x (int): The number of digits.
+        - :param x (int): The number of digits.
 
         Returns:
-        - int: The largest palindrome made from the product of two x-digit numbers.
+        - :param int: The largest palindrome made from the product of two x-digit numbers.
 
         Examples:
         >>> palindrom_product(1000)
@@ -74,10 +73,10 @@ def get_dec_hex_palindrom(x:int):
         Finds the biggest palindrom in decimal and hexadecimal system.
 
         Parameters:
-        - x (int): The number of digits.
+        - :param x (int): The number of digits.
 
         Returns:
-        - int: The biggest palindrom in decimal and hexadecimal system.
+        - :param int: The biggest palindrom in decimal and hexadecimal system.
 
         Examples:
         >>> get_dec_hex_palindrom(58486)

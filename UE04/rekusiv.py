@@ -1,11 +1,6 @@
-'''
-Creator: Burhan Özbek
-Date: 17.11.2020
-Version: 1.0
-'''
-
-
-
+__creator__ =  "Burhan Özbek"
+__date__ = "05.12.2023"
+__version__ =  "1.2"
 
 
 def M(n):
@@ -13,7 +8,7 @@ def M(n):
     Computes the function M(n) according to the given definition.
 
     Parameters:
-    - n (int): The input value.
+    - :param n (int): The input value.
 
     Returns:
     - int: The result of the function M(n).
