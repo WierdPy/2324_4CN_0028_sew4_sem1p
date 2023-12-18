@@ -88,3 +88,29 @@ def get_dec_hex_palindrom(x:int):
             max = i
 
     return max
+
+
+def to_base(number:int, base:int)->str:
+    '''
+        Converts a number from decimal to any base.
+
+        Parameters:
+        - :param number (int): The number in decimal system.
+        - :param base (int): The base to convert to.
+
+        Returns:
+        - :param str: The number in the target base as a string.
+
+        Examples:
+        >>> to_base(1234,16)
+        '4D2'
+    '''
+    hex_chars = "0123456789ABCDEF"
+    result = ""
+    while number > 0:
+        remainder = number % base
+        result = hex_chars[remainder] + result
+        number //= base
+
+    return result if result else "0"
+
